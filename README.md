@@ -17,7 +17,6 @@ For successful communication, both the sender and receiver must follow the same 
 
 Without network protocols, devices wouldn’t understand each other, making communication impossible. Some common network protocols include HTTP, TCP/IP, DNS, and FTP, each serving a specific purpose in data transmission.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f9e43fa-84d5-4875-817c-c2e1af75d16e_1280x1664.gif)
 
 ## Layers of the OSI model.
 
@@ -111,9 +110,12 @@ The Physical Layer is the foundation of the OSI model, responsible for transmitt
 For example, when you send a text message, the Physical Layer converts the digital data into electrical signals in your phone, transmits them as radio waves through the air to a cell tower, then possibly through fiber optic cables as light pulses, before being converted back to electrical signals at the recipient's device.
 #### Functions of Physical Layer
 * Encoding and Signaling: Converts digital data (0s and 1s) into signals appropriate for transmission, such as electrical signals (wired networks) or radio waves (Wi-Fi).
+### Binary to electric signal (voltage up and down)
 
-![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Fu9IQ-mFYsTKF9pL0kQACw.png)
-![](https://www.qrg.northwestern.edu/projects/vss/docs/media/Communications/FM.gif)
+![](./SVGs/binarytodc.webp)
+### Binary to radio frequency (Frequency Modulation)
+
+![](./SVGs/binarytosignal.png)
 * Data Transmission and Reception: Ensures that data is properly sent and received over the communication channel. Different transmission media include wired networks (Ethernet) and wireless networks (Wi-Fi, Bluetooth).
 
 
