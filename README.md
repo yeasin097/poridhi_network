@@ -8,7 +8,7 @@ Networking works the same way. The OSI (Open Systems Interconnection) model is l
 
 Without this structured approach, networking would be messy—just like a house built without a proper plan. Different devices might not work together, fixing issues would be harder, and upgrading systems would be a challenge. The OSI model helps ensure that all parts of a network communicate smoothly and efficiently.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiJw1vrBZOxWawYEvz_v6qAqA6lmG7Xsdt752n0W7dZ6nDY6sNUH4V1akpjVX3pGWPmw4GnD2UTi0kTNu2Yj1Xry8A0hq0HZlkK4YHieKHnzoLHKaz0Zd1JJecBWnQr-rUBtGaFC3VbJ4pNjlDj80WvhlIeZzDIJAH8ktkFP9yVYQqudh2UtO9TeMiS1tN/w640-h288-rw/osi-reference-model.webp)
+![](./SVGs/OSIL1.drawio.svg)
 
 ## What is a protocol?
 In networking, a protocol is a set of rules that defines how data is formatted, transmitted, and processed. It acts as a common language that allows computers and devices to communicate with each other.
