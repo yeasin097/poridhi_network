@@ -72,3 +72,24 @@ TCP establishes a connection using a three-step handshake process to ensure that
 * SYN (Client → Server): The client sends a SYN packet with a sequence number to request a connection.
 * SYN-ACK (Server → Client): The server responds with a SYN-ACK packet, acknowledging the client’s request and including its own sequence number.
 * ACK (Client → Server): The client sends an ACK packet, confirming the server’s response, and the connection is established.
+
+### Internet Layer Protocols:
+* **IP (Internet Protocol):** Responsible for addressing and routing packets across networks. IP defines the structure of addresses and ensures that packets are sent to the correct destination. Example: When you send a request to access a website, the IP protocol ensures that data packets are directed to the correct server based on its IP address.
+
+* **NAT (Network Address Translation):** Translates private IP addresses on a local network to a public IP address, enabling multiple devices to share a single public IP address when accessing the internet. Example: In a home network, all devices use a private IP address (e.g., 192.168.1.x) and share the router’s public IP (e.g., 203.0.113.5) for internet access through NAT.
+
+* **ARP (Address Resolution Protocol):** Resolves the MAC (Media Access Control) address of a device on a local network, given its IP address. It is used for finding the physical address of a device on a LAN. Example: If a device needs to send data to another device on the same local network, it uses ARP to map the destination IP address to its MAC address.
+
+* **ICMP (Internet Control Message Protocol):** Used for error reporting and diagnostic functions, ICMP helps manage network operations by reporting issues such as unreachable hosts or time exceeded in routing. Example: The ping command uses ICMP to check the reachability of a host and measure round-trip time for messages sent to the destination.
+
+* **RIP (Routing Information Protocol):** A distance-vector routing protocol used to determine the best route for data packets by calculating the number of hops to the destination. RIP uses hop count as its metric, with a maximum of 15 hops allowed. Example: A router in a network can use RIP to communicate with other routers to find the best path for transmitting data.
+
+* **OSPF (Open Shortest Path First):** A link-state routing protocol that uses the shortest path algorithm to determine the most efficient route for data transmission within an Autonomous System (AS). OSPF operates within larger networks and is more scalable than RIP. Example: An enterprise network can use OSPF to efficiently route data between different departments or buildings within the organization.
+
+* **EIGRP (Enhanced Interior Gateway Routing Protocol):** A hybrid routing protocol that combines the features of both distance-vector and link-state protocols. It uses a metric based on bandwidth, delay, load, and reliability to select the best path. Example: A large-scale corporate network can use EIGRP to optimize routing decisions between routers in different geographic locations, ensuring efficient data transmission.
+
+## Network Access Layer Protocols:
+* **Ethernet:** The most widely used LAN (Local Area Network) technology that defines the standards for physical connections and data transmission over cables (e.g., twisted pair, fiber optics). Ethernet frames carry data between devices on a local network. Example: A computer using an Ethernet cable to connect to a router on a home or office network sends and receives data through the Ethernet protocol.
+* **PPP (Point-to-Point Protocol):** A data link layer protocol used to establish a direct connection between two nodes, often over serial links. PPP provides error detection, authentication, and compression, and is used for connections like dial-up, VPNs, and DSL. Example: A VPN connection between a user and a remote server can use PPP for secure data transmission.
+
+* **ARP (Address Resolution Protocol):** A protocol used to map a known IP address to a MAC (Media Access Control) address on a local network, allowing devices to communicate with each other over Ethernet. ARP operates at the Network Access Layer and enables proper packet delivery within a local network. Example: When a device on a local network sends data to another device, it uses ARP to resolve the destination IP address to the corresponding MAC address, ensuring the packet is correctly addressed.
