@@ -67,7 +67,7 @@ The Network Access Layer (also called the Link Layer) is responsible for physica
 **TCP Handshake (Three-Way Handshake):**
 TCP establishes a connection using a three-step handshake process to ensure that both the client and server are ready to communicate. The steps are:
 
-![](./SVGs/TCPIP-Handshake.drawio.svg)
+![](./SVGs/TCPIP-Handshake.webp)
 
 * SYN (Client → Server): The client sends a SYN packet with a sequence number to request a connection.
 * SYN-ACK (Server → Client): The server responds with a SYN-ACK packet, acknowledging the client’s request and including its own sequence number.
