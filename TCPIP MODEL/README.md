@@ -34,7 +34,7 @@ The Transport Layer in the TCP/IP model is responsible for end-to-end communicat
 * Flow Control: Regulates data transmission to prevent congestion or packet loss (e.g., TCP windowing).
 * **Multiplexing and Demultiplexing:** Uses port numbers to distinguish multiple applications running on a device (e.g., port 80 for HTTP, port 443 for HTTPS).
 
-## 2.Internet Layer:
+## 2. Internet Layer:
 The Internet Layer in the TCP/IP model is responsible for addressing, routing, and delivering packets across networks. It enables communication between devices on different networks by providing logical addressing and path determination.
 
 * **Logical Addressing:** Uses IP addresses to uniquely identify devices on a network.
@@ -42,10 +42,13 @@ The Internet Layer in the TCP/IP model is responsible for addressing, routing, a
 * **Fragmentation and Reassembly:** Splits large packets into smaller fragments for transmission and reassembles them at the destination.
 * **Error Handling and Diagnostics:** Uses protocols like ICMP for error reporting and network diagnostics (e.g., Ping, Traceroute).
 
-## 1.Network Access Layer (Link Layer):
+## 1. Network Access Layer (Link Layer):
 The Network Access Layer (also called the Link Layer) is responsible for physical transmission of data and managing access to the network medium. It ensures that data is correctly formatted and transmitted over the physical network.
 * **Physical Addressing:** Uses MAC addresses to identify devices within a local network.
 * **Framing:** Encapsulates data into frames for transmission over the network medium.
 * **Error Detection and Correction:** Uses techniques like CRC checks to detect errors in transmitted frames.
 * **Media Access Control:** Determines how devices share and access the network medium (e.g., CSMA/CD in Ethernet).
 * **Physical Transmission:** Defines how data is physically transmitted over cables, wireless signals, or fiber optics.
+
+## TCP/IP Layers and Their Protocols
+![](./SVGs/TCPIP-Protocols.drawio.svg)
