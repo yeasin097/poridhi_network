@@ -17,3 +17,35 @@ Both the TCP/IP model and the OSI model are used to describe how data is transmi
 * The Network Layer of OSI becomes the Internet Layer in TCP/IP. This was mainly a name change to reflect its role in internet communications, while keeping similar routing and addressing functions.
 
 * TCP/IP's Network Access Layer combines the functions of OSI's bottom two layers (Physical and Data Link). Instead of separating physical transmission from basic data handling, TCP/IP handles both hardware-level tasks in one layer.
+
+## Layers of TCP/IP
+
+## 4. Application Layer:
+The Application Layer in the TCP/IP model is responsible for interacting with end-user applications and providing network services. Since the TCP/IP model does not have separate Presentation and Session layers like the OSI model, the Application Layer performs the functions of all three layers of OSI model.
+* **Application layer functions:** Provides network services directly to applications (e.g., web browsing, email, file transfer). Examples of protocols: HTTP, HTTPS, FTP, SMTP, DNS, Telnet.
+* **Presentation layer functions:** Handles data formatting, encryption, and compression. Converts data into a format that applications can understand (e.g., JPEG, MP3, MP4, TLS encryption).
+* **Session Layer functions:** Manages and maintains communication sessions. Responsible for establishing, maintaining, and terminating sessions between devices (e.g., NetBIOS, RPC, SOCKS).
+
+## 3. Transport Layer:
+The Transport Layer in the TCP/IP model is responsible for end-to-end communication, ensuring reliable or fast data transfer between devices. It provides mechanisms for error detection, flow control, and connection management.
+* **Connection-Oriented Communication:** Ensures reliable data transmission using acknowledgments and retransmissions (e.g., TCP).
+* **Connectionless Communication:** Provides fast, lightweight communication without establishing a connection (e.g., UDP).
+* **Error Detection and Correction:** Ensures data integrity using checksums and retransmissions.
+* Flow Control: Regulates data transmission to prevent congestion or packet loss (e.g., TCP windowing).
+* **Multiplexing and Demultiplexing:** Uses port numbers to distinguish multiple applications running on a device (e.g., port 80 for HTTP, port 443 for HTTPS).
+
+## 2.Internet Layer:
+The Internet Layer in the TCP/IP model is responsible for addressing, routing, and delivering packets across networks. It enables communication between devices on different networks by providing logical addressing and path determination.
+
+* **Logical Addressing:** Uses IP addresses to uniquely identify devices on a network.
+* **Packet Forwarding and Routing:** Determines the best path for data to travel across networks (e.g., using routing protocols like OSPF, BGP).
+* **Fragmentation and Reassembly:** Splits large packets into smaller fragments for transmission and reassembles them at the destination.
+* **Error Handling and Diagnostics:** Uses protocols like ICMP for error reporting and network diagnostics (e.g., Ping, Traceroute).
+
+## 1.Network Access Layer (Link Layer):
+The Network Access Layer (also called the Link Layer) is responsible for physical transmission of data and managing access to the network medium. It ensures that data is correctly formatted and transmitted over the physical network.
+* **Physical Addressing:** Uses MAC addresses to identify devices within a local network.
+* **Framing:** Encapsulates data into frames for transmission over the network medium.
+* **Error Detection and Correction:** Uses techniques like CRC checks to detect errors in transmitted frames.
+* **Media Access Control:** Determines how devices share and access the network medium (e.g., CSMA/CD in Ethernet).
+* **Physical Transmission:** Defines how data is physically transmitted over cables, wireless signals, or fiber optics.
