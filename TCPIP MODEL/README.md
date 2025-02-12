@@ -60,4 +60,15 @@ The Network Access Layer (also called the Link Layer) is responsible for physica
 *  **FTP (File Transfer Protocol):** Transfers files between a client and a server over a network, supporting both upload and download operations.
 * **HTTP (Hypertext Transfer Protocol):** Enables web communication by transferring web pages, images, and other resources between a client (browser) and a web server.
 
+### Transport Layer Protocols:
+* **UDP (User Datagram Protocol):** A connectionless protocol that sends data without establishing a connection, offering faster communication but without guarantees of reliability, ordering, or error checking. It is used when speed is more important than reliability.
+* **TCP (Transmission Control Protocol):** Ensures reliable, connection-oriented communication by establishing a connection (via **TCP Handshake**) before data transfer, providing error checking, retransmission of lost data, and flow control. It guarantees that data is delivered in order and without errors.
 
+**TCP Handshake (Three-Way Handshake):**
+TCP establishes a connection using a three-step handshake process to ensure that both the client and server are ready to communicate. The steps are:
+
+![](./SVGs/TCPIP-Handshake.drawio.svg)
+
+* SYN (Client → Server): The client sends a SYN packet with a sequence number to request a connection.
+* SYN-ACK (Server → Client): The server responds with a SYN-ACK packet, acknowledging the client’s request and including its own sequence number.
+* ACK (Client → Server): The client sends an ACK packet, confirming the server’s response, and the connection is established.
