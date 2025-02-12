@@ -52,3 +52,12 @@ The Network Access Layer (also called the Link Layer) is responsible for physica
 
 ## TCP/IP Layers and Their Protocols
 ![](./SVGs/TCPIP-Protocols.drawio.svg)
+
+### Application Layers Protocols:
+* **DNS (Domain Name System):**  Translates human-readable domain names (e.g., google.com) into IP addresses (e.g., 142.250.190.78), allowing computers to locate servers.
+* **DHCP (Dynamic Host Configuration Protocol):** Automatically assigns IP addresses and network configurations (subnet mask, gateway, DNS servers) to devices on a network.
+* **SMTP (Simple Mail Transfer Protocol):** Used for sending emails between mail servers and from email clients to servers. It works with POP3 or IMAP for receiving emails. Example: When you send an email via Gmail (you@gmail.com to friend@yahoo.com), Gmail’s SMTP server (smtp.gmail.com) forwards it to Yahoo’s mail server.
+*  **FTP (File Transfer Protocol):** Transfers files between a client and a server over a network, supporting both upload and download operations.
+* **HTTP (Hypertext Transfer Protocol):** Enables web communication by transferring web pages, images, and other resources between a client (browser) and a web server.
+
+
