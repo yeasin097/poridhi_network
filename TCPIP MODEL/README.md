@@ -96,8 +96,14 @@ TCP establishes a connection using a three-step handshake process to ensure that
 
 ![](./SVGs/TCPIP-Data.drawio.svg)
 
+![](./SVGs/TCPIP-Segment-Header.drawio.svg)
+
 ![](./SVGs/TCPIP-Segment.drawio.svg)
 
+![](./SVGs/TCPIP-Packet-Header.drawio.svg)
+
 ![](./SVGs/TCPIP-Packet.drawio.svg)
+
+![](./SVGs/TCPIP-Frame-Header.drawio.svg)
 
 ![](./SVGs/TCPIP-Frame.drawio.svg)
