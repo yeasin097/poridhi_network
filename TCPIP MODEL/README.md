@@ -94,16 +94,44 @@ TCP establishes a connection using a three-step handshake process to ensure that
 
 * **ARP (Address Resolution Protocol):** A protocol used to map a known IP address to a MAC (Media Access Control) address on a local network, allowing devices to communicate with each other over Ethernet. ARP operates at the Network Access Layer and enables proper packet delivery within a local network. Example: When a device on a local network sends data to another device, it uses ARP to resolve the destination IP address to the corresponding MAC address, ensuring the packet is correctly addressed.
 
+
+## Step-by-Step Data Flow in 4-Layer TCP/IP Model
+
+### 1. Application Layer (Data Creation & Encryption)
+This is where user applications (HTTP, FTP, SSH, etc.) generate raw data (e.g., a web request or file transfer).
+If security is needed, TLS/SSL encryption is applied before passing data to the Transport layer.
+
 ![](./SVGs/TCPIP-Data.drawio.svg)
 
-![](./SVGs/TCPIP-Segment-Header.drawio.svg)
+### 2. Transport Layer (Segmentation & Port Handling)
+The Transport layer (TCP/UDP) ensures end-to-end communication.
+It divides the data into segments and adds a Transport Header:
+* TCP Header (if reliable, connection-oriented communication is needed)
+* UDP Header (if fast, connectionless communication is needed)
+
+Each header includes source/destination port numbers, sequence numbers, and checksums.
+Segments are then passed to the Internet layer.
 
 ![](./SVGs/TCPIP-Segment.drawio.svg)
 
-![](./SVGs/TCPIP-Packet-Header.drawio.svg)
+#### Format of Segment Header
+
+![](./SVGs/TCPIP-Segment-Header.drawio.svg)
+
+### 3. Internet Layer (Packet Creation & Routing)
+The Internet layer is responsible for addressing and routing.
+It encapsulates the segment into a packet by adding an IP Header (which contains source & destination IP addresses). If the destination is outside the local network, it determines the next hop using routing protocols. The packet is forwarded to the Network Access layer.
 
 ![](./SVGs/TCPIP-Packet.drawio.svg)
 
+#### Format of Packet Header
+
+![](./SVGs/TCPIP-Packet-Header.drawio.svg)
+### 4. Network Access Layer (Frame Creation & Physical Transmission)
+The Network Access layer (Ethernet, Wi-Fi, etc.) prepares the packet for transmission by encapsulating it into a frame. A Frame Header (contains source/destination MAC addresses) is added, along with an error-checking trailer (CRC). The frame is then converted into electrical, optical, or radio signals and transmitted over the physical medium.
+![](./SVGs/TCPIP-Frame.drawio.svg)
+
+#### Format of Frame Header
+
 ![](./SVGs/TCPIP-Frame-Header.drawio.svg)
 
-![](./SVGs/TCPIP-Frame.drawio.svg)
