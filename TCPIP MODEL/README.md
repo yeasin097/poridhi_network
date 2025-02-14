@@ -128,8 +128,11 @@ It encapsulates the segment into a packet by adding an IP Header (which contains
 
 ![](./SVGs/TCPIP-Packet-Header.drawio.svg)
 
+
 ### 4. Network Access Layer (Frame Creation & Physical Transmission)
 The Network Access layer (Ethernet, Wi-Fi, etc.) prepares the packet for transmission by encapsulating it into a frame. A Frame Header (contains source/destination MAC addresses) is added, along with an error-checking trailer (CRC). The frame is then converted into electrical, optical, or radio signals and transmitted over the physical medium.
+
+
 ![](./SVGs/TCPIP-Frame.drawio.svg)
 
 #### Format of Frame Header
