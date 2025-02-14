@@ -93,3 +93,11 @@ TCP establishes a connection using a three-step handshake process to ensure that
 * **PPP (Point-to-Point Protocol):** A data link layer protocol used to establish a direct connection between two nodes, often over serial links. PPP provides error detection, authentication, and compression, and is used for connections like dial-up, VPNs, and DSL. Example: A VPN connection between a user and a remote server can use PPP for secure data transmission.
 
 * **ARP (Address Resolution Protocol):** A protocol used to map a known IP address to a MAC (Media Access Control) address on a local network, allowing devices to communicate with each other over Ethernet. ARP operates at the Network Access Layer and enables proper packet delivery within a local network. Example: When a device on a local network sends data to another device, it uses ARP to resolve the destination IP address to the corresponding MAC address, ensuring the packet is correctly addressed.
+
+![](./SVGs/TCPIP-Data.drawio.svg)
+
+![](./SVGs/TCPIP-Segment.drawio.svg)
+
+![](./SVGs/TCPIP-Packet.drawio.svg)
+
+![](./SVGs/TCPIP-Frame.drawio.svg)
