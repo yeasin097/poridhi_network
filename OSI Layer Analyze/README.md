@@ -29,7 +29,7 @@ Select a packet where the Protocol column contains "TCP". In the packet details 
 * **Physical Layer (Layer 1):** Packet capturing tools cannot directly observe the physical layer, which deals with the actual transmission medium (wire, wireless, Bluetooth). Sniffers only capture packets at the network interface level, not the physical signals (which would appear as binary data).
 * **Upper Layers (5-7):** In our example TCP SYN packet, we don't see the upper layers because this packet is part of the connection establishment process. SYN packets don't carry application data, so the Session, Presentation, and Application layers are not involved yet.
 
-![](./SVGs/Packets.png)
+![](./SVGs/OSILayers.png)
 
 When data reaches the **Transport Layer**, it adds the TCP/UDP header containing crucial information like:
 - Source and destination port numbers
@@ -55,10 +55,10 @@ Key components in our captured TCP header:
 
 The TCP flags section shows various control bits:
 
-![](./SVGs/LayerTCPFlags2.png)
+![](./SVGs/TCPFlags.png)
 
 The reserved bits are kept for future protocol extensions.
 
-![](./SVGs/LayerTCPWindow.png)
+![](./SVGs/TCPWindow.png)
 
 The window size field is crucial for flow control, indicating how many bytes the sender can transmit before requiring an acknowledgment. The checksum ensures data integrity, and urgent pointer is used for priority data handling.
