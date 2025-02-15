@@ -20,7 +20,7 @@ termshark -i eth0 tcp
 
 ### 2. Analyzing a TCP Packet in Termshark
 Select a packet where the Protocol column contains "TCP". In the packet details pane, you'll see 4 main sections:
-* **Frame n:** This represents the packet number in the capture sequence. The frame shows the communication between source (192.168.209.132) and destination (34.117.188.166).
+* **Frame n:** This represents the packet number in the capture sequence. The frame shows the communication between source (192.168.209.132) and destination (104.21.58.102).
 * **Ethernet II:** This is the Data Link Layer (OSI Layer 2) header containing source and destination MAC addresses.
 * **IPv4:** This is the Network Layer (OSI Layer 3) header containing source and destination IP addresses.
 * **TCP:** This is the Transport Layer (OSI Layer 4) header containing port numbers and sequence information.
@@ -48,10 +48,10 @@ The TCP header format is structured as follows:
 ![](./SVGs/LayerTCP.png)
 
 Key components in our captured TCP header:
-* **Ports:** Source port 40120 (web browser) and destination port 443 (HTTPS)
+* **Ports:** Source port 38248 (web browser) and destination port 443 (HTTPS)
 * **Stream Index:** Identifies the conversation flow. Each new TCP connection gets a unique stream index
 * **Sequence/Acknowledgment Numbers:** Both are 0 in this case since this is a SYN packet initiating the connection
-* **Header Length:** 40 bytes (TCP headers can range from 20 to 60 bytes, with optional fields)
+* **Header Length:** 20 bytes (TCP headers can range from 20 to 60 bytes, with optional fields)
 
 The TCP flags section shows various control bits:
 
