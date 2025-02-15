@@ -55,7 +55,7 @@ Key components in our captured TCP header:
 
 The TCP flags section shows various control bits:
 
-![](./SVGs/LayerTCPFlags.png)
+![](./SVGs/LayerTCPFlags2.png)
 
 The reserved bits are kept for future protocol extensions.
 
